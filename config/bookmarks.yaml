@@ -1,0 +1,21 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/bookmarks
+
+- 磁力BT:
+    - 犯二青年:
+        - icon: https://findcat.cn/favicon.ico
+          href: https://findcat.cn
+          description: 充钱获得快乐
+
+- 在线观影:
+    - 腾讯影视:
+        - icon: https://findcat.cn/favicon.ico
+          href: https://findcat.cn
+          description: 充钱获得快乐
+
+- 云盘搜索:
+    - 犯二青年:
+        - icon: https://findcat.cn/favicon.ico
+          href: https://findcat.cn
+          description: 充钱获得快乐

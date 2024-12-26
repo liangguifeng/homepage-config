@@ -1,0 +1,49 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/settings
+
+# 网站语言
+language: zh-CN
+# 网站标题
+title: 犯二青年的NAS导航
+# 网站图标
+favicon: https://findcat.cn/favicon.ico
+
+# 供应商(如用到第三方服务，此处填写对应的api key)
+#providers:
+#  finnhub: yourfinnhubapikeyhere
+
+# 网站背景
+background:
+  image: https://www.bing.com/th?id=OHR.WatSriSawai_ZH-CN7688908090_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp # 使用 bing 随机图片作为背景
+  blur: sm # sm, "", md, xl... see https://tailwindcss.com/docs/backdrop-blur
+  saturate: 50 # 0, 50, 100... see https://tailwindcss.com/docs/backdrop-saturate
+  brightness: 50 # 0, 50, 75... see https://tailwindcss.com/docs/backdrop-brightness
+  opacity: 50 # 0-100
+
+# 布局
+layout:
+  Moniter:
+    style: row
+    columns: 4
+    header: false #不显示表头
+
+# 标题样式
+headerStyle: boxedWidgets
+
+# 快速启动
+quicklaunch:
+  searchDescriptions: true
+  hideInternetSearch: true
+  showSearchSuggestions: true
+  hideVisitURL: true
+  provider: google # google, duckduckgo, bing, baidu, brave or custom
+
+# 隐藏首页版本
+hideVersion: true
+
+# 日志路径
+logpath: /home/liangguifeng/web/logs/homepage.log
+
+# 显示 Docker 统计信息
+showStats: true

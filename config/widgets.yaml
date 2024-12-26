@@ -1,0 +1,37 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/service-widgets
+
+# 下面的组件是按照先后顺序展示的，可调整组件配置的先后顺序进行跳转组件位置
+
+# 资源监控组件
+- resources:
+    cpu: true
+    memory: true
+    disk: /
+    cputemp: true # disabled by default
+    uptime: true # disabled by default
+    expanded: true # show the expanded view
+
+# 时间显示组件
+- datetime:
+    text_size: xl
+    format:
+    timeStyle: short
+
+# 搜索组件
+- search:
+    provider: [google, baidu]
+    focus: true
+    target: _blank
+
+# 天气组件
+- openmeteo:
+    label: 三亚 # optional
+    latitude: 18.29
+    longitude: 109.52
+    timezone: Asia/Shanghai # optional
+    units: metric # or imperial
+    cache: 5 # Time in minutes to cache API responses, to stay within limits
+    format: # optional, Intl.NumberFormat options
+      maximumFractionDigits: 1

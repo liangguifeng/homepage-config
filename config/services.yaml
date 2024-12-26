@@ -1,0 +1,73 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services
+
+- Moniter:
+    - 系统信息:
+        widget:
+          type: glances
+          url: http://10.0.0.1:61208
+          metric: info
+          version: 4
+    - 处理器:
+        widget:
+          type: glances
+          url: http://10.0.0.1:61208
+          metric: cpu
+          version: 4
+    - 内存:
+        widget:
+          type: glances
+          url: http://10.0.0.1:61208
+          metric: memory
+          version: 4
+    - 进程:
+        widget:
+          type: glances
+          url: http://10.0.0.1:61208
+          metric: process
+          version: 4
+    - 网络:
+        widget:
+          type: glances
+          url: http://10.0.0.1:61208
+          metric: network:eth0
+          version: 4
+    - 硬盘:nvme0n1:
+        widget:
+          type: glances
+          url: http://10.0.0.1:61208
+          metric: disk:nvme0n1
+          version: 4
+    - 传感器:
+        widget:
+          type: glances
+          url: http://10.0.0.1:61208
+          metric: sensor:Package id 0
+          version: 4
+    - 文件系统:
+        widget:
+          type: glances
+          url: http://10.0.0.1:61208
+          metric: fs:/host
+          version: 4
+
+- 内网访问:
+    - 迅雷:
+        icon: https://findcat.cn/favicon.ico
+        href: http://10.0.0.1:2345
+        ping: http://10.0.0.1:2345
+        description: 迅雷下载
+    - Home Assistant:
+        icon: https://findcat.cn/favicon.ico
+        href: http://10.0.0.1:8123
+        ping: http://10.0.0.1:8123
+        description: 智能家居中控
+
+- 外网访问:
+    - FRP Dashboard:
+        icon: https://findcat.cn/favicon.ico
+        href: https://findcat.cn/
+        ping: https://findcat.cn/
+        description: FRP 监控面板
+
